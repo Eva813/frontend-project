@@ -209,7 +209,12 @@ select > option {
 
 /* Media Query: Large Smartphone (Vertical) */
 @media screen and (max-width: 600px) {
-
+  .player{
+    /* 最大寬度值 */
+    max-width: 95vw; 
+    min-width: 0;
+  
+  }
 
   .fas {
     font-size: 20px;
