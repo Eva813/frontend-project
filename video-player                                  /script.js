@@ -7,6 +7,9 @@ const volumeIcon = document.getElementById('volume-icon');
 const volumeRange = document.querySelector(' volume-range');
 const volumeBar = document.querySelector(' volume-bar');
 const playerSpeed = document.querySelector('.player-speed');
+const currentTime = document.querySelector('.time-elapsed');
+const duration = document.querySelector('.time-duration');
+
 
 // Play & Pause ----------------------------------- //
 
@@ -32,10 +35,40 @@ function togglePlay() {
 playBtn.addEventListener("ended", playIcon);
 // Progress Bar ---------------------------------- //
 
-function updateProgress() {
-  console.log('currentTime', video.currentTime, 'duration', video.duration);
-  progressBar.style.width = `${(video.currentTime / video.duration) * 100}%`;
+//計算時間，並形成時間格式00:00
+
+//https://stackoverflow.com/questions/6312993/javascript-seconds-to-time-string-with-format-hhmmss
+function timeFormatter(time) {
+  const minutes = Math.floor(time / 60);
+  let seconds = Math.floor(time % 60);
+  seconds = seconds > 9 ? seconds : `0${seconds}`;
+  //console.log(minutes, seconds);
+  return `${minutes}:${seconds}`;
 }
+
+//進度條的更新，寬度會隨播放 長度改變
+
+
+function updateProgress() {
+  // console.log('currentTime', video.currentTime, 'duration', video.duration);
+  progressBar.style.width = `${(video.currentTime / video.duration) * 100}%`;
+  currentTime.textContent = `${timeFormatter(video.currentTime)}/`;
+  duration.textContent = `${timeFormatter(video.duration)}`;
+
+
+}
+//進度條點擊跳轉的功能
+function setProgress(e) {
+
+
+  //點擊位置除以總長
+  let offsetTime = e.offsetX / progressRange.offsetWidth;
+  progressBar.style.width = `${offsetTime * 100}%`
+  video.currentTime = offsetTime * video.duration;
+  console.log(video.duration);
+  console.log(offsetTime);
+}
+
 
 // Volume Controls --------------------------- //
 
@@ -51,4 +84,5 @@ function updateProgress() {
 playBtn.addEventListener("click", togglePlay);
 video.addEventListener("click", togglePlay);
 video.addEventListener('timeupdate', updateProgress);
-video.addEventListener('canplay', updateProgress)
+video.addEventListener('canplay', updateProgress);
+progressRange.addEventListener('click', setProgress);
