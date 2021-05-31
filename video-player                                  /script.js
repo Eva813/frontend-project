@@ -4,8 +4,8 @@ const progressRange = document.querySelector('.progress-range');
 const progressBar = document.querySelector('.progress-bar');
 const playBtn = document.getElementById('play-btn');
 const volumeIcon = document.getElementById('volume-icon');
-const volumeRange = document.querySelector(' volume-range');
-const volumeBar = document.querySelector(' volume-bar');
+const volumeRange = document.querySelector('.volume-range');
+const volumeBar = document.querySelector('.volume-bar');
 const playerSpeed = document.querySelector('.player-speed');
 const currentTime = document.querySelector('.time-elapsed');
 const duration = document.querySelector('.time-duration');
@@ -65,13 +65,27 @@ function setProgress(e) {
   let offsetTime = e.offsetX / progressRange.offsetWidth;
   progressBar.style.width = `${offsetTime * 100}%`
   video.currentTime = offsetTime * video.duration;
-  console.log(video.duration);
-  console.log(offsetTime);
+  //因為timeupdate事件，會在每次時間變化而觸發
+
 }
 
 
 // Volume Controls --------------------------- //
+function changeVolume(e) {
+  let offsetVolume = e.offsetX / volumeRange.offsetWidth;
+  //設置音量進位條件
+  if (offsetVolume < 0.1) {
+    offsetVolume = 0;
+  }
+  if (offsetVolume > 0.9) {
+    offsetVolume = 1;
+  }
+  volumeBar.style.width = `${offsetVolume * 100}%`;
+  //將取得的值實際套用到video.volume
+  video.volume = offsetVolume;
+  //console.log(offsetVolume);
 
+}
 
 
 // Change Playback Speed -------------------- //
@@ -86,3 +100,4 @@ video.addEventListener("click", togglePlay);
 video.addEventListener('timeupdate', updateProgress);
 video.addEventListener('canplay', updateProgress);
 progressRange.addEventListener('click', setProgress);
+volumeRange.addEventListener('click', changeVolume);
