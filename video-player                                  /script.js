@@ -71,7 +71,11 @@ function setProgress(e) {
 
 
 // Volume Controls --------------------------- //
+
+//設置預設變數值
+let lastVolume = 1
 function changeVolume(e) {
+
   let offsetVolume = e.offsetX / volumeRange.offsetWidth;
   //設置音量進位條件
   if (offsetVolume < 0.1) {
@@ -85,9 +89,47 @@ function changeVolume(e) {
   video.volume = offsetVolume;
   //console.log(offsetVolume);
 
+  //先清空css 的class資料
+  volumeIcon.className = '';
+  //在加入新的
+  if (offsetVolume > 0.7) {
+    volumeIcon.classList.add('fas', 'fa-volume-up');
+  } else if (offsetVolume < 0.7 && offsetVolume > 0) {
+    volumeIcon.classList.add('fas', 'fa-volume-down');
+  }
+  else if (offsetVolume === 0) {
+    volumeIcon.classList.add('fas', 'fa-volume-off');
+  }
+  //追蹤音量鍵最終的變化
+  lastVolume = offsetVolume;
+  //console.log(offsetVolume);
+
 }
 
+function muteVolume() {
+  //先清空css 的class資料
 
+  volumeIcon.className = '';
+  if (video.volume > 0) {
+    volumeBar.style.width = 0;
+    lastVolume = video.volume;
+    video.volume = 0;
+    volumeIcon.classList.add('fas', 'fa-volume-mute');
+    volumeIcon.setAttribute('title', 'Unmute');
+  } else {
+    //從靜音變到有聲音
+    video.volume = lastVolume;
+    volumeBar.style.width = `${lastVolume * 100}%`;
+
+    if (lastVolume > 0.7) {
+      volumeIcon.classList.add('fas', 'fa-volume-up');
+    } else if (lastVolume < 0.7 && lastVolume > 0) {
+      volumeIcon.classList.add('fas', 'fa-volume-down');
+    };
+    // volumeIcon.classList.add('fas', 'fa-volume-up');
+    volumeIcon.setAttribute('title', 'Mute');
+  }
+}
 // Change Playback Speed -------------------- //
 
 
@@ -101,3 +143,4 @@ video.addEventListener('timeupdate', updateProgress);
 video.addEventListener('canplay', updateProgress);
 progressRange.addEventListener('click', setProgress);
 volumeRange.addEventListener('click', changeVolume);
+volumeIcon.addEventListener('click', muteVolume);
