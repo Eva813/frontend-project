@@ -155,6 +155,7 @@ function openFullscreen(elem) {
   } else if (elem.msRequestFullscreen) { /* IE11 */
     elem.msRequestFullscreen();
   }
+  video.classList.add('video-fullscreen');
 }
 
 /* Close fullscreen */
@@ -166,6 +167,7 @@ function closeFullscreen() {
   } else if (document.msExitFullscreen) { /* IE11 */
     document.msExitFullscreen();
   }
+  video.classList.remove('video-fullscreen');
 }
 
 //建立布林值，作為啟動與否的開關
