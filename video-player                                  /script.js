@@ -1,4 +1,4 @@
-
+const player = document.querySelector('.player')
 const video = document.querySelector('video');
 const progressRange = document.querySelector('.progress-range');
 const progressBar = document.querySelector('.progress-bar');
@@ -9,7 +9,8 @@ const volumeBar = document.querySelector('.volume-bar');
 const playerSpeed = document.querySelector('.player-speed');
 const currentTime = document.querySelector('.time-elapsed');
 const duration = document.querySelector('.time-duration');
-
+const speed = document.querySelector('.player-speed');
+const fullscreen = document.querySelector('.fullscreen');
 
 // Play & Pause ----------------------------------- //
 
@@ -111,6 +112,7 @@ function muteVolume() {
 
   volumeIcon.className = '';
   if (video.volume > 0) {
+    //console.log(video.volume)// 結果1
     volumeBar.style.width = 0;
     lastVolume = video.volume;
     video.volume = 0;
@@ -118,6 +120,7 @@ function muteVolume() {
     volumeIcon.setAttribute('title', 'Unmute');
   } else {
     //從靜音變到有聲音
+
     video.volume = lastVolume;
     volumeBar.style.width = `${lastVolume * 100}%`;
 
@@ -132,9 +135,55 @@ function muteVolume() {
 }
 // Change Playback Speed -------------------- //
 
+function changeSpeed() {
+  // console.log('video play backrate', video.playbackRate);
+  // console.log('video speed', speed.value);
+  video.playbackRate = speed.value;
 
+}
 
 // Fullscreen ------------------------------- //
+
+
+/* View in fullscreen */
+function openFullscreen(elem) {
+  console.log(elem)
+  if (elem.requestFullscreen) {
+    elem.requestFullscreen();
+  } else if (elem.webkitRequestFullscreen) { /* Safari */
+    elem.webkitRequestFullscreen();
+  } else if (elem.msRequestFullscreen) { /* IE11 */
+    elem.msRequestFullscreen();
+  }
+}
+
+/* Close fullscreen */
+function closeFullscreen() {
+  if (document.exitFullscreen) {
+    document.exitFullscreen();
+  } else if (document.webkitExitFullscreen) { /* Safari */
+    document.webkitExitFullscreen();
+  } else if (document.msExitFullscreen) { /* IE11 */
+    document.msExitFullscreen();
+  }
+}
+
+//建立布林值，作為啟動與否的開關
+let fullscreenBtn = false;
+
+function setFullscreen() {
+  if (!fullscreenBtn) {
+    openFullscreen(player);
+  } else {
+
+    closeFullscreen();
+
+  }
+  console.log('判斷完', fullscreenBtn);
+  fullscreenBtn = !fullscreenBtn;
+  console.log('last', fullscreenBtn);
+}
+
 
 
 playBtn.addEventListener("click", togglePlay);
@@ -144,3 +193,5 @@ video.addEventListener('canplay', updateProgress);
 progressRange.addEventListener('click', setProgress);
 volumeRange.addEventListener('click', changeVolume);
 volumeIcon.addEventListener('click', muteVolume);
+speed.addEventListener('change', changeSpeed);
+fullscreen.addEventListener('click', setFullscreen)
