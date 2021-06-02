@@ -147,7 +147,7 @@ function changeSpeed() {
 
 /* View in fullscreen */
 function openFullscreen(elem) {
-  console.log(elem)
+
   if (elem.requestFullscreen) {
     elem.requestFullscreen();
   } else if (elem.webkitRequestFullscreen) { /* Safari */
@@ -181,10 +181,11 @@ function setFullscreen() {
     closeFullscreen();
 
   }
-  console.log('判斷完', fullscreenBtn);
+
   fullscreenBtn = !fullscreenBtn;
   console.log('last', fullscreenBtn);
 }
+
 
 
 
