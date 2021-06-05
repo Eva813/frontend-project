@@ -80,6 +80,8 @@ body {
   max-width: 1200px;
   margin: 0 auto;
 }
+
+
 .title{
  font-size: 80px;
  line-height: 94px;
@@ -100,4 +102,42 @@ body {
 
 p{
   line-height:36px
+}
+
+ /* 藍色區 */
+.content{
+  max-width: 996px;
+  margin:0px auto;
+  padding: 24px;
+  
+}
+.blue{
+  background:#415165;
+  color:#fff;
+ 
+}
+.subtitle-white{
+
+  border-bottom: 1px solid #fff;
+  text-align: center;
+  line-height:43px;
+
+}
+.subtitle-white span{
+  color: #fff;
+  font-size:24px;
+  line-height:28px;
+  margin-bottom: 15px;
+}
+.skill-list{
+
+  border-left: 1px solid #96A9C4;
+    width:230px;
+  padding-left: 24px;
+  margin: 0 auto;
+
+} 
+.skill-list li{
+  line-height:36px;
+  margin-bottom:20px
 }
