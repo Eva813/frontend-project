@@ -72,24 +72,65 @@ img{
   padding-top: 20px;
   justify-content:space-between;
 }
+
+@media (max-width: 768px) {
+  .header{
+		flex-direction: column;
+		align-items: center;
+	}
+}
+.logo a{
+	display:block;
+	width:250px;
+	height:250px;
+  background:url(./images/M1.png);
+	/* 圖片取代文字技巧 */
+	text-indent: 101%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+@media (max-width: 768px){
+  .logo{
+		margin-bottom:20px;
+		width:150px;
+	}
+	.logo a{
+		width:150px;
+		height:150px;
+    /* 當尺寸縮小，再換圖示 */
+		background:url(./images/M2.png) no-repeat
+	}	
+}
+
+
 .nav-list{
   display:flex;
+  flex-wrap: wrap;
+}
 
-}
-.nav-list li{
-  display:flex;
-   list-style: none;
-   background-color: ;
-}
+
 .nav-list li a{
- text-decoration: none;
+  /* 要記得將a改為區塊 */
+   display:block;
+   text-decoration: none;
     background: #3399FF;
     color: #fff;
     font-weight: bold;
     text-align: center;
     padding: 10px;
 }
+.nav-list li a:hover{
+	background:orange;
+}
+@media(max-width: 768px){
+  .nav-list li{
+    width:50%;
+    margin:0 auto 10px auto;
+  }
+}
 
+/* 文章區 */
 .whole-content{
   display:flex;
   align-items: flex-start;
@@ -116,6 +157,26 @@ img{
   width: 20%;
   border: 2px solid #000;
   padding: 5px;
+}
+
+
+@media(max-width: 768px) {
+  .whole-content{
+    flex-direction: column;
+    justify-content: center;
+  }
+  .main-content{
+    width: 100%;
+  }
+  .left-img{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .left-img img{
+    margin-bottom: 10px;
+  }
 }
 
 .footer {
