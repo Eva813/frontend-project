@@ -51,3 +51,168 @@ img{
   max-width:100%;
   height:auto;
 }
+
+/* ////分隔 */
+body{
+  font-size: 20px;
+  color: #3F5D45;
+}
+a{
+  color: #3F5D45;
+  text-decoration:none;
+}
+
+.container{
+ max-width: 940px;
+ margin: 0 auto;
+}
+.header{
+  padding: 30px 0;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo-img img{
+  width:220px;
+  height:40px
+}
+.nav-list{
+  display:flex;
+}
+
+.nav-list a{
+padding: 10px 30px 8px 30px;
+
+}
+.nav-list a:hover{
+  background-color:#3F5D45;
+  color: #fff;
+}
+.banner{
+  margin-bottom: 60px;
+}
+
+/* //餐點選單 */
+.sweet-main{
+  display:flex;
+  justify-content: space-between; 
+ 
+}
+.sweet-menu{
+  width:300px;
+   margin: 0 auto;
+}
+.sweet-menu h2{
+  color:#fff;
+ background-color: #3F5D45;
+  text-align: center;
+  font-size: 24px;
+  line-height:65px;
+
+}
+
+
+
+.menu-list li{
+  /* 因為上下有框限都1px會有空隙 */
+margin-bottom: -1px;
+
+}
+
+.menu-list a{
+  display: block;
+  text-align: center;
+  font-size: 24px;
+  line-height:65px;
+   border:1px solid #EAF0ED;
+ transition:all 0.3 ease-in;
+
+}
+.menu-list a:hover{
+  background-color:#EAF0ED;
+}
+/* //餐點項目 */
+.sweet-items{
+  width: 620px;
+}
+.item-card{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.item-card li{
+  width: 300px;
+ position: relative;
+ margin-bottom: 20px;
+}
+/* 圖片下方空隙 */
+.item-card img{
+ 
+  vertical-align: middle;
+}
+
+.item-card .tag{
+  position: absolute;
+ color: #fff;
+ left: 20px;
+ top: 0;
+ /* margin-right: 212px; */
+ writing-mode: vertical-lr ;
+ letter-spacing: 5px;
+ background-color: #3F5D45;
+ padding: 10.8px 10px;
+
+}
+.item-card .far{
+  position: absolute;
+  font-size: 20px;
+  right: 20px;
+  top: 19px;
+  /* margin-right: 22px;
+  margin-top: 19px; */
+}
+
+.item-card-info{
+  display:flex;
+  border-bottom: 1px solid #EAF0ED;
+  border-right: 1px solid #EAF0ED;
+  border-left: 1px solid #EAF0ED;
+  line-height: 56px;
+    font-size: 20px;
+  text-align: center;
+}
+.item-card-info h2{
+  width: 173px;
+  border-right: 1px solid #EAF0ED;
+
+}
+.item-card-info span{
+   width: 127px;
+   
+}
+.buy{
+  display:block;
+  font-size: 24px;
+  line-height: 65px;
+  text-align: center;
+  background-color: #EAF0ED;
+}
+
+.pages-list{
+  display:flex;
+  align-items: center;
+  justify-content: flex-end;
+  text-align: center;
+  line-height:60px
+
+}
+.pages-list a{
+  width: 60px;
+  display: block;
+  border: 1px solid #EAF0ED;
+}
+.pages-list a:hover{
+  background-color: #3F5D45;
+  color: #fff;
+}
+
