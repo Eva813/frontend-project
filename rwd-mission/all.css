@@ -183,3 +183,24 @@ img{
     padding: 8px 0;
     text-align: center;
 }
+.btn-group{
+  display:flex;
+}
+.btn{
+  width: 100px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  text-decoration: none;
+  background-color:#000;
+  color:#fff;
+  display:block;
+  padding:5px 10px;
+  border-radius: 5px;
+}
+.btn-blue{
+ background-color:blue;
+}
+.btn-pink{
+ background-color:pink;
+}
