@@ -66,6 +66,13 @@
   color: #4f4d46;
 }
 
+.link-dark2 {
+  color: #636057;
+}
+.link-dark2:hover, .link-dark2:focus {
+  color: #4f4d46;
+}
+
 .ratio {
   position: relative;
   width: 100%;
@@ -454,6 +461,10 @@
 }
 
 .border-dark {
+  border-color: #636057 !important;
+}
+
+.border-dark2 {
   border-color: #636057 !important;
 }
 
@@ -1361,6 +1372,10 @@
   color: #636057 !important;
 }
 
+.text-dark2 {
+  color: #636057 !important;
+}
+
 .text-white {
   color: #fff !important;
 }
@@ -1414,6 +1429,10 @@
 }
 
 .bg-dark {
+  background-color: #636057 !important;
+}
+
+.bg-dark2 {
   background-color: #636057 !important;
 }
 

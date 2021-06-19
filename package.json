@@ -1,0 +1,20 @@
+{
+  "name": "frontend-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+   "watch": "node-sass -o  css scss/all.scss -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Eva813/frontend-project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Eva813/frontend-project/issues"
+  },
+  "homepage": "https://github.com/Eva813/frontend-project#readme"
+}
