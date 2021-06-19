@@ -1,0 +1,6 @@
+@mixin tag($width){
+  color:#fff;
+  background-color:#858377;
+  border-radius: 5px;
+  width:$width;
+}

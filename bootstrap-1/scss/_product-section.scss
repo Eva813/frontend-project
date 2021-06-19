@@ -1,0 +1,78 @@
+.nav-section .nav-logo{
+  height: 40px;
+}
+
+.product{
+  background-color:#F8F9FA;
+  padding-top: 47px;
+  padding-bottom: 47px;
+
+}
+
+
+.product .product-tag{
+  font-size: 12px;
+  padding:3px 16px;
+ margin-bottom: 7px;
+  @include tag(80px);
+}
+.product h1{
+  margin-bottom: 23.9px;
+}
+.produt-img img{
+  width:100%;
+ border-radius: 30px;
+}
+.product-goal{
+  span{
+  font-size: 14px;
+  color:#636057;
+ }
+ .dollars{
+ font-size: 32px;
+ color:#494846;
+}
+.progress-bar{
+  color:#858377 ;
+}
+.sponse{
+   p{
+     font-size:32px;
+     color:#494846;
+   }
+   .people{
+    margin-right: 145px;
+
+   }
+}
+.icons{
+  ul{
+    padding: 0;
+  }
+  li {
+    margin-right: 25px;
+  }
+}
+.time{
+  font-size:16px;
+  line-height: 24px;
+  color:#636057 ;
+ padding:13.9px 36px 14px 16px;
+  // width: 450px;
+  background-color: #fff;
+  border-left: 5px solid #FFDF65;
+}
+ button{
+   text-align:center;
+   height:51.9px;
+   color:#636057 ;
+ }
+ 
+ .follow-btn{
+  width:269px;
+ }
+}
+
+.icon-list{
+  list-style: none;
+}
