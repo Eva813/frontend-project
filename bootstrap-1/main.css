@@ -3381,11 +3381,11 @@ textarea.form-control-lg {
     .accordion-button {
       transition: none; } }
   .accordion-button:not(.collapsed) {
-    color: #0c63e4;
+    color: #494846;
     background-color: #e7f1ff;
     box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.125); }
     .accordion-button:not(.collapsed)::after {
-      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%230c63e4'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23494846'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
       transform: rotate(-180deg); }
   .accordion-button::after {
     flex-shrink: 0;
@@ -7807,3 +7807,46 @@ textarea.form-control-lg {
     .project-list .sponse-btn:hover {
       background-color: #FF785E;
       color: #fff; }
+
+.project-qa {
+  font-size: 14px; }
+  .project-qa h2, .project-qa .h2 {
+    color: #494846; }
+    .project-qa h2 .accordion-button:focus, .project-qa .h2 .accordion-button:focus {
+      outline: none;
+      color: #494846;
+      box-shadow: 0 0 0 0.25rem rgba(255, 223, 101, 0.6); }
+    .project-qa h2 .number, .project-qa .h2 .number {
+      display: block;
+      margin: 0 16px 0 20px;
+      width: 28px;
+      line-height: 28px;
+      text-align: center;
+      background-color: #FFDF65;
+      color: #636057;
+      font-weight: 600; }
+  .project-qa .accordion-body {
+    line-height: 27px;
+    margin-left: 64px;
+    color: #858377; }
+
+.project-schedule {
+  font-size: 14px;
+  color: #858377; }
+  .project-schedule ul {
+    padding: 0; }
+  .project-schedule img {
+    max-width: 100%;
+    height: 168px; }
+  .project-schedule .card {
+    max-height: 168px; }
+  .project-schedule .card-title {
+    font-size: 16px;
+    letter-spacing: 0.8px;
+    color: #494846; }
+  .project-schedule .card-text {
+    margin-top: 8px;
+    margin-bottom: 16px; }
+  .project-schedule a {
+    text-decoration: none;
+    color: #FF785E; }

@@ -1,0 +1,29 @@
+.project-schedule{
+  font-size: 14px;
+  color:$text-color-light;
+ul{
+  padding: 0;
+}
+  img{
+    max-width: 100%;
+    height:168px;
+  }
+  .card{
+    max-height:168px;
+  }
+
+  .card-title{
+    font-size: 16px;
+    letter-spacing:0.8px;
+    color:$text-color-dark;
+  }
+  .card-text{
+    margin-top: 8px;
+    margin-bottom: 16px;
+  }
+  a{
+    text-decoration: none;
+    
+    color:#FF785E ;
+  }
+}

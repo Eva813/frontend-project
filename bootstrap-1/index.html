@@ -101,18 +101,23 @@
           type="button" role="tab" aria-controls="intro" aria-selected="true">專案介紹</button>
       </li>
       <li class="nav-item" role="presentation">
-        <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button"
-          role="tab" aria-controls="profile" aria-selected="false">Profile</button>
+        <button class="nav-link" id="qa-tab" data-bs-toggle="tab" data-bs-target="#project-qa" type="button" role="tab"
+          aria-controls="qa" aria-selected="false">常見問答</button>
       </li>
       <li class="nav-item" role="presentation">
-        <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button"
-          role="tab" aria-controls="contact" aria-selected="false">Contact</button>
+        <button class="nav-link" id="schedule-tab" data-bs-toggle="tab" data-bs-target="#project-schedule" type="button"
+          role="tab" aria-controls="schedule" aria-selected="false">目前進度</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="schedule-tab" data-bs-toggle="tab" data-bs-target="#project-schedule" type="button"
+          role="tab" aria-controls="contact" aria-selected="false">留言</button>
       </li>
     </ul>
     <div class="container tab-info">
       <div class="row">
         <div class="col-lg-8">
           <div class="tab-content" id="myTabContent">
+            <!-- 轉案介紹 -->
             <div class="tab-pane fade show active  project-intro" id="project-intro" role="tabpanel"
               aria-labelledby="intro-tab">...
 
@@ -135,12 +140,188 @@
 
 
             </div>
-            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+
+            <!-- 專案問答 -->
+            <div class="tab-pane fade project-qa " id="project-qa" role="tabpanel" aria-labelledby="qa-tab">
               <h3>gggg</h3>
 
+              <div class="accordion" id="accordionPanelsStayOpenExample">
+                <div class="accordion-item mb-3  shadow-sm rounded  ">
+
+                  <h2 class="accordion-header d-flex " id="panelsStayOpen-headingOne">
+
+                    <button class="accordion-button  bg-white" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                      aria-controls="panelsStayOpen-collapseOne">
+                      <span class="number ">Q1</span>影片拍完之後可以編輯嗎？
+                    </button>
+                  </h2>
+
+                  <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                    aria-labelledby="panelsStayOpen-headingOne">
+                    <div class="accordion-body">
+                      可以進行簡易的編輯，內建 5 種濾鏡，影片秒數有3秒、5秒、10秒可以選擇，拍完的當下可以編輯要印出來的影片範圍哦！
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item mb-3  border-top shadow-sm rounded ">
+                  <h2 class="accordion-header d-flex" id="panelsStayOpen-headingTwo">
+
+                    <button class="accordion-button collapsed bg-white" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                      aria-controls="panelsStayOpen-collapseTwo">
+                      <span class="number rounded">Q2</span>供保固或維修服務嗎？
+                    </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+                    aria-labelledby="panelsStayOpen-headingTwo">
+                    <div class="accordion-body">
+                      提供產品售後服務，對產品本體(不含配件、線材)提供二年保固服務。產品因意外或人為不當使用或未經授權維修等非依使用手冊使用而造成產品損壞者，則不在保固範圍之內，得向客戶酌收產品維修服務費用。
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item mb-3  border-top shadow-sm rounded ">
+                  <h2 class="accordion-header d-flex" id="panelsStayOpen-headingThree">
+
+                    <button class="accordion-button collapsed bg-white" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                      aria-controls="panelsStayOpen-collapseThree">
+                      <span class="number rounded">Q3</span>補充包底片要去哪裡購買呢？
+                    </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+                    aria-labelledby="panelsStayOpen-headingThree">
+                    <div class="accordion-body">
+                      本產品可以兼容 i-type 及 600 相片，各大網路平台皆有販售。
+                    </div>
+                  </div>
+                </div>
+
+
+
+                <div class="accordion-item mb-3  border-top shadow-sm rounded ">
+                  <h2 class="accordion-header d-flex" id="panelsStayOpen-headingFour">
+
+                    <button class="accordion-button collapsed bg-white" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false"
+                      aria-controls="panelsStayOpen-collapseFour">
+                      <span class="number rounded">Q4</span>印出來的拍立得照片需要充電嗎？
+                    </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse"
+                    aria-labelledby="panelsStayOpen-headingFour">
+                    <div class="accordion-body">
+                      不用，取出後稍微搖晃，相片與空氣接觸數秒後便會產生圖像顏色
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="accordion-item mb-3  border-top shadow-sm rounded ">
+                  <h2 class="accordion-header d-flex" id="panelsStayOpen-headingFive">
+
+                    <button class="accordion-button collapsed bg-white" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false"
+                      aria-controls="panelsStayOpen-collapseFive">
+                      <span class="number rounded">Q5</span>運送方式及付款方式有哪些呢？
+                    </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse"
+                    aria-labelledby="panelsStayOpen-headingFive">
+                    <div class="accordion-body">
+                      可以選擇超商取貨及宅配，付款方式有銀行轉帳及信用卡支付。
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item mb-3  border-top shadow-sm rounded ">
+                  <h2 class="accordion-header d-flex" id="panelsStayOpen-headingSix">
+
+                    <button class="accordion-button collapsed bg-white" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#panelsStayOpen-collapseSix" aria-expanded="false"
+                      aria-controls="panelsStayOpen-collapseSix">
+                      <span class="number rounded">Q6</span>退換貨方式及規則
+                    </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse"
+                    aria-labelledby="panelsStayOpen-headingSix">
+                    <div class="accordion-body">
+                      因商品封條多為一次性包裝，商品退貨時必須回復原狀，亦即必須回復至您收到商品時的原始狀態，且會視回收的商品狀態另外酌收額外的整新費用，請您務必確認有購買需求後再行拆封，感謝您的配合。
+                    </div>
+                  </div>
+                </div>
+
+
+
+              </div>
+            </div>
+            <!-- 目前進度 -->
+            <div class="tab-pane fade project-schedule" id="project-schedule" role="tabpanel"
+              aria-labelledby="schedule-tab">
+
+              <h3>aaaa</h3>
+              <ul class="schedule-list">
+                <li class="card mb-3 rounded">
+                  <div class=" row g-0">
+                    <!-- 使用col-auto  圖片就好了 -->
+                    <div class="col-auto">
+                      <img src="https://hexschool.github.io/boootstrap5WebLayout/assets/news01.jpg" alt="進度圖片1">
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h2 class="card-title">高雄體驗會｜免費參加送帆布袋</h2>
+                        <span>2021-6-20</span>
+                        <p class="card-text">大家安安！謝謝每位贊助者的熱情支持，讓我們離夢想更進一步，我們將於下個月舉辦體驗會，歡迎各位踴躍參與！</p>
+                        <p><a href="#">MORE</a></p>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="card mb-3 rounded">
+                  <div class=" row g-0">
+                    <!-- 使用col-auto  圖片就好了 -->
+                    <div class="col-auto">
+                      <img src="https://hexschool.github.io/boootstrap5WebLayout/assets/news02.jpg" alt="進度圖片1">
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h2 class="card-title">高雄體驗會｜免費參加送帆布袋</h2>
+                        <span>2021-6-20</span>
+                        <p class="card-text">大家安安！謝謝每位贊助者的熱情支持，讓我們離夢想更進一步，我們將於下個月舉辦體驗會，歡迎各位踴躍參與！</p>
+                        <p><a href="#">MORE</a></p>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <!-- /// -->
+                <li class="card mb-5 rounded">
+                  <div class=" row g-0">
+                    <!-- 使用col-auto  圖片就好了 -->
+                    <div class="col-auto">
+                      <img src="https://hexschool.github.io/boootstrap5WebLayout/assets/news03.jpg" alt="進度圖片1">
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h2 class="card-title">高雄體驗會｜免費參加送帆布袋</h2>
+                        <span>2021-6-20</span>
+                        <p class="card-text">大家安安！謝謝每位贊助者的熱情支持，讓我們離夢想更進一步，我們將於下個月舉辦體驗會，歡迎各位踴躍參與！</p>
+                        <p><a href="#">MORE</a></p>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <!-- 留言 -->
+            <div class="tab-pane fade" id="project-schedule" role="tabpanel" aria-labelledby="schedule-tab">
+
+              <h3>aaaa</h3>
 
             </div>
-            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
           </div>
 
 
@@ -388,7 +569,7 @@
 
           </div>
           <!-- 贊助填表 -->
-          <div class="heart-img d-flex justify-content-center mb-3">
+          <!-- <div class="heart-img d-flex justify-content-center mb-3">
             <img src="https://hexschool.github.io/boootstrap5WebLayout/assets/icon_heart.svg" alt="">
 
           </div>
@@ -430,7 +611,7 @@
               <button type="submit" class="btn btn-primary rounded-pill">贊助專案</button>
             </div>
 
-          </form>
+          </form> -->
 
         </div>
 
@@ -438,7 +619,7 @@
 
 
         <!-- 始 右側贊助專案區 -->
-        <div class="col-lg-4 choose-sponse d-none d-md-block">
+        <!-- <div class="col-lg-4 choose-sponse d-none d-md-block">
           <div class="position-sticky">
             <div class="card">
               <div class="card-body">
@@ -468,9 +649,9 @@
               </div>
             </div>
 
-            <h2 class="choose-title">選擇一個方案來支持</h2>
-            <!-- //募資方案選項 -->
-            <ul class="project-list p-0">
+            <h2 class="choose-title">選擇一個方案來支持</h2> -->
+        <!-- //募資方案選項 -->
+        <!-- <ul class="project-list p-0">
               <li class="project-item">
                 <div class="card">
                   <img src="https://hexschool.github.io/boootstrap5WebLayout/assets/plan_img.jpg" class="card-img-top"
@@ -562,7 +743,7 @@
             </ul>
 
           </div>
-        </div>
+        </div> -->
         <!-- end of 贊助列表 -->
       </div>
     </div>
