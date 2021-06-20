@@ -2,5 +2,12 @@
   color:#fff;
   background-color:#858377;
   border-radius: 5px;
+  padding:3px 16px;
   width:$width;
+}
+@mixin button-hover{
+&:hover{
+  background-color:#FF785E ;
+  color:#fff;
+}
 }

@@ -1,0 +1,119 @@
+
+.choose-sponse{
+  font-size: 16px;
+  line-height: 24px;
+  color:#373A3C ;
+  // 調整視窗滾動
+    height: calc(100vh - 92px);
+    top: 82px;
+    position: sticky;
+    overflow-x: scroll;
+
+  h2{
+    font-size: 20px;
+    color:#494846 ;
+  }
+
+   .card-company{
+     padding-top: 16px;
+   }
+  p{
+    letter-spacing: 0.7px;
+    margin-top: 16px;
+  }
+  .choose-title{
+    background-color:#F8F9FA;
+    border-left: 3px solid #FFDF65;
+     border-right: 3px solid #FFDF65;
+    margin-top: 38px;
+    margin-bottom:21px;
+    text-align: center;
+    line-height:40px
+  }
+ 
+}
+
+
+
+.contact-icon{
+
+  a{
+    margin-right: 8px;
+    text-align: center;
+    font-size: 16px;
+    display:block;
+    height:30px;
+    width: 30px;
+    padding:5px;
+    border-radius: 50%;
+  }
+}
+.contact-btn{
+  width: 101px;
+  line-height:30px;
+  text-align: center;
+  font-size: 12px;
+  color: #858377 ;
+    border:1px solid #858377 ;
+  .contact-link{
+color: #858377 ;
+  text-decoration: none;
+ 
+
+ }
+}
+
+
+.project-list{
+  color:$text-color-light;
+  list-style: none;
+  img{
+    width: 100%;
+  }
+  .card-body{
+    padding: 8px 16px 16px 16px;
+  }
+  .little-title{
+    font-size: 14px;
+    padding-bottom:8px;
+    border-bottom: 0.5px solid $text-color-light;
+    margin-bottom: 8px;
+  }
+  h3{
+    font-size: 20px;
+    color: $text-color-dark;
+    letter-spacing:2px;
+    line-height:27px;
+    font-weight:500;
+  
+  }
+  .card-dollars{
+    font-size:24px;
+    color: $text-color-dark;
+    line-height:41px;
+  }
+  .tag-group{
+    font-size: 12px;
+   .tag-group-1{
+     @include tag(104px);
+     background-color: #E8E8DB ;
+     color:$text-color-light;
+   }
+   .tag-group-2{
+     @include tag(88px);
+     span{
+       color: #FFDF65;
+     }
+   }
+  }
+  .card-text{
+    font-size: 16px;
+    letter-spacing: 0.7px;
+    line-height: $line-height;
+  }
+  .sponse-btn{
+    width: 100%;
+    color:#636057;
+    @include button-hover;
+  }
+}

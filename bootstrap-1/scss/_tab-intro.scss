@@ -1,9 +1,13 @@
 // 專案內容
 
-.tab-intro{
+.project-intro{
      font-size: 24px;
   color: #494846;
-  
+
+  img{
+    width: 100%;
+  }
+
   .tab-intro-title{
  
     border-left: 3px solid #FFDF65;
@@ -15,7 +19,13 @@
     color:#494846 ;
     line-height:32px;
   }
-  .heart-img{
+  
+}
+
+
+.heart-img{
+    width: 43px;
+    height:36px;
     margin: 0 auto;
   }
   .break-line{
@@ -25,6 +35,7 @@
     position:relative;
     display: flex;
     justify-content: center;
+    margin-bottom: 10px;
   }
   .sponse-title{
     position: absolute;
@@ -35,8 +46,6 @@
     padding: 5px 35px;
     text-align: center;
   }
-}
-
 .sponse-form{
   label{
    font-size: 16px;

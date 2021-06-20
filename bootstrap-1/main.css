@@ -7565,6 +7565,12 @@ textarea.form-control-lg {
 .nav-section {
   border-bottom: 5px solid #FFDF65; }
 
+.top-nav {
+  top: 82px; }
+
+.h-100vh-nav {
+  height: calc(100vh - 82px); }
+
 .nav-section .nav-logo {
   height: 40px; }
 
@@ -7575,11 +7581,11 @@ textarea.form-control-lg {
 
 .product .product-tag {
   font-size: 12px;
-  padding: 3px 16px;
   margin-bottom: 7px;
   color: #fff;
   background-color: #858377;
   border-radius: 5px;
+  padding: 3px 16px;
   width: 80px; }
 
 .product h1, .product .h1 {
@@ -7626,6 +7632,10 @@ textarea.form-control-lg {
   height: 51.9px;
   color: #636057; }
 
+.product-goal .sponse-btn:hover {
+  background-color: #FF785E;
+  color: #fff; }
+
 .product-goal .follow-btn {
   width: 269px; }
 
@@ -7636,7 +7646,8 @@ textarea.form-control-lg {
   height: 70px;
   text-align: center;
   border-bottom: 1px solid #F8F9FA;
-  margin-bottom: 24px; }
+  margin-bottom: 24px;
+  background-color: #fff; }
   .tabs ul {
     list-style: none; }
   .tabs a {
@@ -7652,33 +7663,41 @@ textarea.form-control-lg {
       border-bottom: 2px solid #FFDF65;
       color: #494846; }
 
-.tab-intro {
+.project-intro {
   font-size: 24px;
   color: #494846; }
-  .tab-intro .tab-intro-title {
+  .project-intro img {
+    width: 100%; }
+  .project-intro .tab-intro-title {
     border-left: 3px solid #FFDF65;
     padding: 5px 16px;
     margin-top: 24px; }
-  .tab-intro p {
+  .project-intro p {
     font-size: 16px;
     color: #494846;
     line-height: 32px; }
-  .tab-intro .heart-img {
-    margin: 0 auto; }
-  .tab-intro .break-line {
-    height: 3px;
-    background-color: #FFDF65;
-    width: 100%;
-    position: relative;
-    display: flex;
-    justify-content: center; }
-  .tab-intro .sponse-title {
-    position: absolute;
-    top: -15px;
-    background: #fff;
-    display: inline-block;
-    padding: 5px 35px;
-    text-align: center; }
+
+.heart-img {
+  width: 43px;
+  height: 36px;
+  margin: 0 auto; }
+
+.break-line {
+  height: 3px;
+  background-color: #FFDF65;
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px; }
+
+.sponse-title {
+  position: absolute;
+  top: -15px;
+  background: #fff;
+  display: inline-block;
+  padding: 5px 35px;
+  text-align: center; }
 
 .sponse-form label {
   font-size: 16px;
@@ -7691,3 +7710,100 @@ textarea.form-control-lg {
   height: 52px;
   color: #636057;
   margin: 0 auto; }
+
+.choose-sponse {
+  font-size: 16px;
+  line-height: 24px;
+  color: #373A3C;
+  height: calc(100vh - 92px);
+  top: 82px;
+  position: sticky;
+  overflow-x: scroll; }
+  .choose-sponse h2, .choose-sponse .h2 {
+    font-size: 20px;
+    color: #494846; }
+  .choose-sponse .card-company {
+    padding-top: 16px; }
+  .choose-sponse p {
+    letter-spacing: 0.7px;
+    margin-top: 16px; }
+  .choose-sponse .choose-title {
+    background-color: #F8F9FA;
+    border-left: 3px solid #FFDF65;
+    border-right: 3px solid #FFDF65;
+    margin-top: 38px;
+    margin-bottom: 21px;
+    text-align: center;
+    line-height: 40px; }
+
+.contact-icon a {
+  margin-right: 8px;
+  text-align: center;
+  font-size: 16px;
+  display: block;
+  height: 30px;
+  width: 30px;
+  padding: 5px;
+  border-radius: 50%; }
+
+.contact-btn {
+  width: 101px;
+  line-height: 30px;
+  text-align: center;
+  font-size: 12px;
+  color: #858377;
+  border: 1px solid #858377; }
+  .contact-btn .contact-link {
+    color: #858377;
+    text-decoration: none; }
+
+.project-list {
+  color: #858377;
+  list-style: none; }
+  .project-list img {
+    width: 100%; }
+  .project-list .card-body {
+    padding: 8px 16px 16px 16px; }
+  .project-list .little-title {
+    font-size: 14px;
+    padding-bottom: 8px;
+    border-bottom: 0.5px solid #858377;
+    margin-bottom: 8px; }
+  .project-list h3, .project-list .h3 {
+    font-size: 20px;
+    color: #494846;
+    letter-spacing: 2px;
+    line-height: 27px;
+    font-weight: 500; }
+  .project-list .card-dollars {
+    font-size: 24px;
+    color: #494846;
+    line-height: 41px; }
+  .project-list .tag-group {
+    font-size: 12px; }
+    .project-list .tag-group .tag-group-1 {
+      color: #fff;
+      background-color: #858377;
+      border-radius: 5px;
+      padding: 3px 16px;
+      width: 104px;
+      background-color: #E8E8DB;
+      color: #858377; }
+    .project-list .tag-group .tag-group-2 {
+      color: #fff;
+      background-color: #858377;
+      border-radius: 5px;
+      padding: 3px 16px;
+      width: 88px; }
+      .project-list .tag-group .tag-group-2 span {
+        color: #FFDF65; }
+  .project-list .card-text {
+    font-size: 16px;
+    letter-spacing: 0.7px;
+    line-height: 24px; }
+  .project-list .sponse-btn {
+    width: 100%;
+    color: #636057; }
+    .project-list .sponse-btn:hover {
+      background-color: #FF785E;
+      color: #fff; }
