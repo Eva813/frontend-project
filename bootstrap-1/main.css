@@ -7643,24 +7643,23 @@ textarea.form-control-lg {
   list-style: none; }
 
 .tabs {
-  height: 70px;
+  outline: none;
   text-align: center;
-  border-bottom: 1px solid #F8F9FA;
-  margin-bottom: 24px;
-  background-color: #fff; }
+  border-bottom: 1px solid #F8F9FA; }
   .tabs ul {
     list-style: none; }
-  .tabs a {
+  .tabs .tab-btn {
+    margin-bottom: -1px;
+    background: none;
+    border-style: none;
     margin: auto 0;
-    text-decoration: none;
     color: #636057;
     font-size: 16px;
-    line-height: 24px;
-    padding-bottom: 30px;
+    line-height: 70px;
     margin-right: 40px;
     transition: all 0.2s; }
-    .tabs a:hover {
-      border-bottom: 2px solid #FFDF65;
+    .tabs .tab-btn:hover {
+      border-bottom: 1px solid #FFDF65;
       color: #494846; }
 
 .project-intro {
@@ -7850,3 +7849,29 @@ textarea.form-control-lg {
   .project-schedule a {
     text-decoration: none;
     color: #FF785E; }
+
+.project-message {
+  font-size: 16px;
+  color: #494846; }
+  .project-message .title {
+    background-color: #FEFEFE;
+    font-size: 14px;
+    line-height: 52px;
+    border-left: 2px solid #FFDF65;
+    padding-left: 16px;
+    margin-bottom: 32px; }
+  .project-message strong {
+    color: #FF785E; }
+  .project-message ul {
+    list-style: none;
+    padding: 0; }
+  .project-message .card-title {
+    font-size: 20px;
+    letter-spacing: 2px; }
+  .project-message .card-reply {
+    padding: 16px;
+    background-color: #F8F9FA;
+    height: 80px; }
+    .project-message .card-reply h3, .project-message .card-reply .h3 {
+      font-size: 14px;
+      color: #FF785E; }

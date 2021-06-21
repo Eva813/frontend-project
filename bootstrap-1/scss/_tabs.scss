@@ -1,26 +1,27 @@
 .tabs{
-  height:70px;
+  outline: none;
+
 text-align: center;
 border-bottom: 1px solid #F8F9FA;
-margin-bottom: 24px;
-background-color: #fff;
 
   ul{
     list-style: none;
  
   }
-  a{
-    
+ 
+  .tab-btn{
+    margin-bottom: -1px;
+    background: none;
+    border-style: none;
     margin:auto 0;
-    text-decoration: none;
     color:#636057 ;
     font-size: 16px;
-    line-height: 24px;
-    padding-bottom: 30px;
+    line-height: 70px;
+   
     margin-right: 40px;
     transition: all 0.2s;
     &:hover{
-      border-bottom: 2px solid #FFDF65 ;
+      border-bottom: 1px solid #FFDF65 ;
       color:#494846;
     }
   }

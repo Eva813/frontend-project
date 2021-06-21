@@ -1,0 +1,33 @@
+.project-message{
+  font-size: 16px;
+  color: $text-color-dark;
+  .title{
+     background-color: #FEFEFE;
+     font-size: 14px;
+     line-height: 52px;
+     border-left: 2px solid #FFDF65;
+     padding-left: 16px;
+     margin-bottom: 32px;
+  }
+  strong{
+     color: #FF785E;
+    }
+
+  ul{
+    list-style: none;
+    padding: 0;
+  }
+  .card-title{
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
+  .card-reply{
+    padding: 16px;
+    background-color:#F8F9FA ;
+    height: 80px;
+    h3{
+      font-size: 14px;
+       color: #FF785E;
+    }
+  }
+}
