@@ -7571,6 +7571,9 @@ textarea.form-control-lg {
 .h-100vh-nav {
   height: calc(100vh - 82px); }
 
+.bg-gray {
+  background-color: #494846; }
+
 .nav-section .nav-logo {
   height: 40px; }
 
@@ -7656,10 +7659,9 @@ textarea.form-control-lg {
     color: #636057;
     font-size: 16px;
     line-height: 70px;
-    margin-right: 40px;
-    transition: all 0.2s; }
-    .tabs .tab-btn:hover {
-      border-bottom: 1px solid #FFDF65;
+    margin-right: 40px; }
+    .tabs .tab-btn:focus {
+      border-bottom: 2px solid #FFDF65;
       color: #494846; }
 
 .project-intro {
@@ -7688,7 +7690,7 @@ textarea.form-control-lg {
   position: relative;
   display: flex;
   justify-content: center;
-  margin-bottom: 10px; }
+  margin-bottom: 40px; }
 
 .sponse-title {
   position: absolute;
@@ -7709,6 +7711,9 @@ textarea.form-control-lg {
   height: 52px;
   color: #636057;
   margin: 0 auto; }
+  .sponse-form button:hover {
+    background-color: #FF785E;
+    color: #fff; }
 
 .choose-sponse {
   font-size: 16px;

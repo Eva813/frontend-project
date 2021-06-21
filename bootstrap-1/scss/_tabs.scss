@@ -19,9 +19,10 @@ border-bottom: 1px solid #F8F9FA;
     line-height: 70px;
    
     margin-right: 40px;
-    transition: all 0.2s;
-    &:hover{
-      border-bottom: 1px solid #FFDF65 ;
+    
+
+    &:focus{
+      border-bottom: 2px solid #FFDF65 ;
       color:#494846;
     }
   }
