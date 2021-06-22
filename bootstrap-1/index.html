@@ -81,10 +81,20 @@
           </div>
           <div class="icons">
             <ul class="icon-list d-flex justify-content-start">
-              <li> <img src="https://hexschool.github.io/boootstrap5WebLayout/assets/icon_good01.svg" alt=""></li>
-              <li><img src="https://hexschool.github.io/boootstrap5WebLayout/assets/icon_good02.svg" alt=""></li>
-              <li><img src="https://hexschool.github.io/boootstrap5WebLayout/assets/icon_good03.svg" alt=""></li>
-              <li><img src="https://hexschool.github.io/boootstrap5WebLayout/assets/icon_good04.svg" alt=""></li>
+              <li> <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="認證標章"><img
+                    src="https://hexschool.github.io/boootstrap5WebLayout/assets/icon_good01.svg" alt="認證標章">
+                </a></li>
+              <li>
+                <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="品質保證"><img
+                    src="https://hexschool.github.io/boootstrap5WebLayout/assets/icon_good02.svg" alt="品質保證">
+              </li>
+              <li><a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="原生創意"><img
+                    src="https://hexschool.github.io/boootstrap5WebLayout/assets/icon_good03.svg" alt="創意">
+                </a></li>
+              <li>
+                <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="人氣王">
+                  <img src="https://hexschool.github.io/boootstrap5WebLayout/assets/icon_good04.svg" alt="人氣王"></a>
+              </li>
             </ul>
           </div>
           <p class="time">專案募資中！ <br>
@@ -607,7 +617,46 @@
   </footer>
 
 
+  <!-- //登入的彈跳視窗 -->
+  <!-- Button trigger modal -->
+  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+    Launch static backdrop modal
+  </button>
 
+  <!-- Modal -->
+  <!-- Button trigger modal -->
+  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+    Launch static backdrop modal
+  </button>
+
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title" id="staticBackdropLabel">登入</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="group">
+            <label for="user_id">帳號</label>
+            <input type="text" name="" id="user_id">
+            <!-- for,與input的名字設一樣，才能在點到label時，會直接把插入點帶進去 -->
+          </div>
+          <div class="group">
+
+            <label for="user_password">密碼</label>
+            <input type="text" name="" id="user_password">
+            <span>忘記密碼</span>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <p>還沒有帳號？註冊一個帳號</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- bootstrap -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
@@ -616,6 +665,14 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js"
     integrity="sha384-lpyLfhYuitXl2zRZ5Bn2fqnhNAKOAaM/0Kr9laMspuaMiZfGmfwRNFh8HlMy49eQ"
     crossorigin="anonymous"></script>
+
+  <script>
+    // 要啟用tooltip
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+      return new bootstrap.Tooltip(tooltipTriggerEl)
+    });
+  </script>
 
 </body>
 
