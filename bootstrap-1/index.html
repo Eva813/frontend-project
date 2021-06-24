@@ -23,7 +23,7 @@
             data-bs-target="#navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-
+          <!-- ///以下為nav的項目 -->
           <div class="collapse navbar-collapse " id="navbarToggleExternalContent">
             <ul class="navbar-nav me-auto mb-2 ">
               <li class="nav-item">
@@ -42,7 +42,8 @@
             </ul>
 
             <div class="btnGroup d-flex justify-content-end" role="group" aria-label="Basic example">
-              <button type="button" class="nav-button btn  btn-primary me-3 rounded-pill ">登入</button>
+              <button type="button" class="nav-button btn  btn-primary me-3 rounded-pill" data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop">登入</button>
               <button type="button" class="nav-button btn dark btn-outline-dark rounded-pill  ">註冊</button>
 
             </div>
@@ -476,7 +477,7 @@
 
 
       <!-- 始 右側贊助專案區 -->
-      <div class="col-lg-4 choose-sponse d-none d-md-block mt-5">
+      <div class="col-lg-4 choose-sponse  d-md-block mt-5">
         <div class="position-sticky">
           <div class="card">
             <div class="card-body">
@@ -618,16 +619,8 @@
 
 
   <!-- //登入的彈跳視窗 -->
-  <!-- Button trigger modal -->
-  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-    Launch static backdrop modal
-  </button>
 
   <!-- Modal -->
-  <!-- Button trigger modal -->
-  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-    Launch static backdrop modal
-  </button>
 
   <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
     aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -650,9 +643,12 @@
             <span>忘記密碼</span>
           </div>
         </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <p>還沒有帳號？註冊一個帳號</p>
+        <div class="buttton   d-flex justify-content-center align-items-center mb-4">
+          <button type="button" class="btn modal-button btn-primary rounded-pill " data-bs-dismiss="modal">登入</button>
+        </div>
+        <div class="modal-footer mb-3">
+          <p class="modal-footer-p">還沒有帳號？<strong> <a href="http://" target="_blank"
+                rel="noopener noreferrer">註冊一個帳號</a> </strong></p>
         </div>
       </div>
     </div>

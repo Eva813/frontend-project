@@ -7582,6 +7582,46 @@ textarea.form-control-lg {
   padding-top: 47px;
   padding-bottom: 47px; }
 
+.modal-content {
+  padding: 10px; }
+
+.modal-body {
+  line-height: 2; }
+  .modal-body h2, .modal-body .h2 {
+    font-size: 24px; }
+  .modal-body .group {
+    margin-bottom: 20px; }
+  .modal-body input {
+    width: 100%;
+    border: 1px solid #F7F7F7;
+    border-radius: 5px;
+    background-color: #F7F7F7; }
+    .modal-body input:focus {
+      outline: none;
+      border: 1px solid #FFDF65; }
+  .modal-body span {
+    font-size: 14px;
+    color: #858377; }
+
+.modal-button {
+  width: 100%; }
+
+.modal-footer {
+  position: relative;
+  display: flex;
+  justify-content: center; }
+  .modal-footer .modal-footer-p {
+    position: absolute;
+    color: #858377;
+    top: -20px;
+    background: #fff;
+    display: inline-block;
+    padding: 5px 30px;
+    text-align: center; }
+    .modal-footer .modal-footer-p a {
+      text-decoration: none;
+      color: #FF785E; }
+
 .product .product-tag {
   font-size: 12px;
   margin-bottom: 7px;
