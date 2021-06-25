@@ -1,0 +1,21 @@
+
+.nav-button{
+  width:96px;
+}
+.nav-section{
+ border-bottom: 5px solid #FFDF65;
+}
+
+$text-color-dark:#494846;
+$text-color-light:#858377;
+$line-height:24px;
+
+.top-nav {
+    top: 82px;
+}
+.h-100vh-nav {
+    height: calc(100vh - 82px);
+}
+.bg-gray{
+  background-color:#494846;
+}

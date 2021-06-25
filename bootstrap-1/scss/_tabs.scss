@@ -1,0 +1,30 @@
+.tabs{
+  outline: none;
+
+text-align: center;
+border-bottom: 1px solid #F8F9FA;
+
+  ul{
+    list-style: none;
+ 
+  }
+ 
+  .tab-btn{
+    margin-bottom: -1px;
+    background: none;
+    border-style: none;
+    margin:auto 0;
+    color:#636057 ;
+    font-size: 16px;
+    line-height: 70px;
+   
+    margin-right: 40px;
+    
+
+    &:focus{
+      border-bottom: 2px solid #FFDF65 ;
+      color:#494846;
+    }
+  }
+}
+
